@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    margin: 0;
+    padding: 15px  25px;
+    background: #fbf3d3 ;
+    box-shadow: 0 0 10px black;
+
+}
+
+body {
+    font-family: 'Outfit';
+    font-style: normal;
+    background: #FFF0B7;
+    /*overflow: hidden;*/
+
+    -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* POSTAR / PUBLICAR */
+div.new-post{
+    width: 100%;
+    height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:50px 0;
+    padding: 25px;
+
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 0 3px black;
+}
+/*usuário*/
+div.new-post div.info-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*Imagem de usuário*/
+div.new-post div.info-user div.img-user{
+    width: 35px;
+    height: 35px;
+    border-radius: 50% ;
+    background: #333;
+}
+/*Nome de usuário*/
+div.new-post div.info-user strong{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #EC9A48;
+}
+/*Texto e botões*/
+div.new-post form.formPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+/*TEXTO*/
+div.new-post form.formPost textarea {
+    height: 90px;
+    background: #EEE;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize:none;
+
+    outline: none;
+    border: 0;
+
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+}
+/*íCONES E BOTÕES*/
+div.new-post form.formPost div.icons-and-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.new-post form.formPost div.icons-and-button div.icons{
+    width: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.new-post form.formPost div.icons-and-button div.icons button{
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 0;
+
+    background: none;
+
+    cursor: pointer;
+}
+/*BOTÃO DE PUBLICAR*/
+div.new-post form.formPost div.icons-and-button button.btn-submit-form {
+    background: #EC9A48;
+    padding: 10px 50px;
+    color: #FFF;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+    cursor:pointer;
+}
+
+div.new-post form.formPost div.icons-and-button button.btn-submit-form:hover{
+    background: #ec7f12;
+}
+/*POSTAGENS JÁ PUBLICADAS*/
+ul.posts li.post{
+    margin-bottom:50px ;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 0 3px black;
+
+    padding: 25px;
+
+}
+
+ul.posts li.post div.info-user-post {
+    display: flex;
+    align-items: center;
+}
+
+/*IMAGEM USUÁRIO POSTAGEM*/
+ul.posts li.post div.info-user-post div.img-user-post {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% ;
+    background:  #8d6138 ;
+}
+
+ul.posts li.post div.info-user-post div.img-user-post >img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+/*NOME E HORA DA POSTAGEM*/
+ul.posts li.post div.info-user-post div.name-and-hour{
+    margin-left: 10px;
+}
+/*NOME DO USUÁRIO*/
+ul.posts li.post div.info-user-post div.name-and-hour >strong{
+    font-size: 16px;
+    
+    color: #EC9A48;
+}
+/*HORA DA POSTAGEM*/
+ul.posts li.post div.info-user-post div.name-and-hour >p{
+    
+    font-size: 10px;
+    
+    color: #907052;
+}
+/*IMAGEM / FOTO DA POSTAGEM*/
+ul.posts li.post div.img-post {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin:10px;
+    border-radius: 10px;
+
+    background: #EEE;
+}
+
+ul.posts li.post div.img-post >img{
+    width:50% ;
+    border-radius:10px;
+    padding: 5px;
+}
+
+/*TEXTO DA POSTAGEM*/
+ul.posts li.post >p {
+    width: 100%;
+    margin: 10px 0px;
+    font-weight: bold;
+    text-align: justify;
+
+    color: #333;
+    /*background: #EEE;*/
+}
+
+ul.posts li.post div.action-btn-post {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+/*BOTÕES DE AÇÃO*/
+ul.posts li.post div.action-btn-post button.files-post {
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: 1px 0 2px #333;*/
+    
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: background 0.2s;
+}
+/*
+ul.posts li.post div.action-btn-post button.files-post_like{
+    background-color: blue;
+}
+*/
+ul.posts li.post div.action-btn-post button.files-post img {
+    margin-right: 5px;
+    width: 20px;
+    padding: 2px;
+}
+
+/*BOTÃO DE LIKE*/
+.like{
+    background-color:none; 
+}
+.like:hover{
+    background-color:rgb(225, 135, 133)
+}
+
+/*BOTÃO DE MENSAGEM*/
+.direct{
+    background-color: none;
+}
+.direct:hover{
+    background-color: #eab179;
+}
+
+/*BOTÃO DE COMPARTILHAR*/
+.share{
+    background-color:  none;
+}
+.share:hover{
+    background-color:  rgb(99, 174, 240);
+    /*color: #D9D9D9;*/
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #8d6138;
+}
+
+/* Formulário */
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px #EC9A4856;
+}
+
+.card-login > h2 {
+    color: #060606;
+    font-weight: 600;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background: #EEE;
+    color: #000;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.textfield > a {
+    color: #EC9A48;
+}
+
+.checkfield {
+    display: flex;
+    align-self: start;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.checkfield > label {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.checkfield > input {
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Botões */
+
+.btn-login{
+    background-color: #EC9A48;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.btn-sign{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:#000;
+    cursor: pointer;
+}
+/*
+@media only screen and (max-width: 768px) {
+    .main-login {
+        background-image: url('/public/assets/img/Petfamily.gif');
+        background-repeat: no-repeat;
+    }
+
+    .left-login {
+        display: none;
+    }
+
+    .right-login {
+        width: 500px;
+        height: 599px;
+    }
+
+    .card-login {
+        width: 300px;
+    }
+}
+*/

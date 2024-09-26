@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global-reset.css">
+    <link rel="stylesheet" href="./css/feed.css">
+    
+    <title>Feed | SocialPet</title>
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo - SocialPet correto.png" height="60">
+
+    </header>
+    <main class="main">
+        <!--Formulário de postagem-->
+        <div class="new-post">
+            <div class="info-user">
+                <!--Imagem do usuário-->
+                <div class="img-user"></div>
+                <!--Nome do usuário-->
+                <strong>Gustavo Lima</strong>
+            </div>
+
+            <form action="" class="formPost" id="formPost">
+                <textarea name="textarea" placeholder="Amo filhotes!" id="textarea"></textarea>
+
+                <!--Ícones e botões do post-->
+                <div class="icons-and-button">
+                    <div class="icons">
+                        
+                        <button class="btn-file-form"><img src="assets/img.svg" alt="Adicionar uma imagem"></button>
+                        
+                        <button class="btn-file-form"><img src="assets/gif.svg" alt="Adicionar um gif"></button>
+                        
+                        <button class="btn-file-form"><img src="assets/video.svg" alt="Adicionar um video"></button>
+
+                    </div>
+                    <button type="submit" class="btn-submit-form">Publicar</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="posts" id="posts">
+            <li class="post">
+
+                <div class="info-user-post">
+                    <div class="img-user-post">
+                        <img src="images/dog-tyson.jpeg">
+                    </div>
+
+                    <div class="name-and-hour"> <strong>Roberto carlos</strong>
+                    <p>21h</p>
+                    </div>
+                </div>
+
+                <p>
+                Onde posso arranjar algum?
+                Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor, 
+                </p>
+
+                <div class="img-post">
+                    <img src="images/cachorro-cururu.webp">
+                    <img src="images/gato-grilado.jpg">
+                </div>
+
+
+                <div class="action-btn-post">
+                    
+                    <button type="button" class="files-post like"><img src="icons/paw.svg" alt="Curtir">curtir</button>
+
+                    <button type="button" class="files-post direct"><img src="icons/direct.svg" alt="Comentar">comentar</button>
+
+                    <button type="button" class="files-post share"><img src="icons/share.svg" alt="Compartilhar">compartilhar</button>
+                </div>
+<!--
+            </li>
+            <li class="post">
+
+                <div class="info-user-post">
+                    <div class="img-user-post"></div>
+
+                    <div class="name-and-hour"> <strong>Jeferson Ribeiro</strong>
+                    <p>21h</p>
+                    </div>
+                </div>
+
+                <p>
+                Onde posso arranjar algum?
+                Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor, ou de palavras aleatórias que nem sequer parecem suficientemente credíveis. Se vai usar uma passagem do Lorem Ipsum, 
+                </p>
+
+                <div class="action-btn-post">
+                    <button type="button" class="files-post like"><img src="icons/paw.svg" alt="Curtir">curtir</button>
+                    <button type="button" class="files-post direct"><img src="icons/direct.svg" alt="Comentar">comentar</button>
+                    <button type="button" class="files-post share"><img src="icons/share.svg" alt="Compartilhar">compartilhar</button>
+                </div>
+
+            </li>
+            <li class="post">
+
+                <div class="info-user-post">
+                    <div class="img-user-post"></div>
+
+                    <div class="name-and-hour"> <strong>Jeferson Ribeiro</strong>
+                    <p>21h</p>
+                    </div>
+                </div>
+
+                <p>
+                Todos os geradores de Lorem Ipsum na Internet acabam por repetir porções de texto pré-definido, como necessário, fazendo com que este seja o primeiro verdadeiro gerador na Internet. Usa um dicionário de 200 palavras em Latim, combinado com uma dúzia de modelos de frases, para gerar Lorem Ipsum que pareçam razoáveis. 
+                </p>
+
+                <div class="action-btn-post">
+                    <button type="button" class="files-post like"><img src="icons/paw.svg" alt="Curtir">curtir</button>
+                    <button type="button" class="files-post direct"><img src="icons/direct.svg" alt="Comentar">comentar</button>
+                    <button type="button" class="files-post share"><img src="icons/share.svg" alt="Compartilhar">compartilhar</button>
+                </div>
+
+            </li>-->
+        </ul>
+
+    </main>
+    <!-- Início logo e ícones -->
+    <div class="nav-left">
+
+    </div>
+    <!-- Fim logo e ícones -->
+    
+    <!-- Início menu e busca -->
+    <div class="nav-left">
+
+    </div>
+    <!-- Fim menu e busca -->
+    <script type="module" src="js/formPost.js"></script>
+</body>
+
+</html>

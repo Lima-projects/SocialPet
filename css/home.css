@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar-left main sidebar-right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
